@@ -1,0 +1,11 @@
+checkpoints/
+uploaded_media/
+temp/
+assets/
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.env
+api_test*.log
+latentsync_output_test*.mp4

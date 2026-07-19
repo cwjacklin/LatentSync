@@ -73,6 +73,8 @@ def main(config, args):
         scheduler=scheduler,
     ).to("cuda")
 
+    pipeline.enable_vae_slicing()
+
     # use DeepCache
     if args.enable_deepcache:
         helper = DeepCacheSDHelper(pipe=pipeline)

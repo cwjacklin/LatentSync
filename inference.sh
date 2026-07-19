@@ -1,7 +1,7 @@
 #!/bin/bash
 
 python -m scripts.inference \
-    --unet_config_path "configs/unet/stage2_512.yaml" \
+    --unet_config_path "configsi/unet/stage2_512.yaml" \
     --inference_ckpt_path "checkpoints/latentsync_unet.pt" \
     --inference_steps 20 \
     --guidance_scale 1.5 \

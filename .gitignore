@@ -50,3 +50,10 @@ wandb/
 !/docs/*
 !/internal/*.png
 .cog/
+uploaded_media/
+.env 
+.gradio
+.kilo
+jobs.json
+TEMP/
+*.code-workspace

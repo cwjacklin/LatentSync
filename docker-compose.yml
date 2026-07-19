@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  latentsync:
+    build: .
+    container_name: latentsync_api
+    network_mode: "host"
+    volumes:
+      - ./checkpoints:/app/checkpoints
+      - ./assets:/app/assets
+      - ./temp:/app/temp
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    restart: unless-stopped

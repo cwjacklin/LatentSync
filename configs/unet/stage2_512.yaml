@@ -10,7 +10,7 @@ data:
   val_audio_path: assets/demo1_audio.wav
   batch_size: 1 # 4
   num_workers: 12 # 12
-  num_frames: 16
+  num_frames: 8
   resolution: 512
   mask_image_path: latentsync/utils/mask.png
   audio_sample_rate: 16000
